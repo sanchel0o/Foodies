@@ -9,13 +9,19 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.ArrowBack
 import androidx.compose.material3.Button
 import androidx.compose.material3.Divider
+import androidx.compose.material3.FloatingActionButton
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -28,9 +34,11 @@ import com.nti.team.foodies.R
 import com.nti.team.foodies.presentation.detail_screen.components.ProductImage
 
 const val SPACER_HEIGHT = 24
+
 const val SMALL_PADDING = 12
 const val MEDIUM_PADDING = 13
 const val LARGE_PADDING = 16
+
 const val CORNER_RADIUS = 8
 
 @Composable
@@ -46,6 +54,7 @@ fun DetailScreen() {
             .fillMaxSize()
             .systemBarsPadding()
     ) {
+        FloatingBackButton(onBackButtonClick = { })
         Column(modifier = Modifier.fillMaxSize()) {
             ProductImage()
             Spacer(modifier = Modifier.height(SPACER_HEIGHT.dp))
@@ -152,5 +161,18 @@ fun AddToCartButton(
                 )
             )
         }
+    }
+}
+
+@Composable
+fun FloatingBackButton(
+    onBackButtonClick: () -> Unit
+) {
+    FloatingActionButton(
+        modifier = Modifier.padding(top = LARGE_PADDING.dp, start = LARGE_PADDING.dp).size(44.dp),
+        shape = CircleShape,
+        onClick = { /*TODO*/ }
+    ) {
+        Icon(imageVector = Icons.Outlined.ArrowBack, contentDescription = "" )
     }
 }
