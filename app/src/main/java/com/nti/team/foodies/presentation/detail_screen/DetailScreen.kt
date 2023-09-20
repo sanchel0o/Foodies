@@ -171,7 +171,7 @@ fun FloatingBackButton(
     FloatingActionButton(
         modifier = Modifier.padding(top = LARGE_PADDING.dp, start = LARGE_PADDING.dp).size(44.dp),
         shape = CircleShape,
-        onClick = { /*TODO*/ }
+        onClick = { onBackButtonClick() }
     ) {
         Icon(imageVector = Icons.Outlined.ArrowBack, contentDescription = "" )
     }
