@@ -1,4 +1,4 @@
-package com.nti.team.foodies.ui.theme
+package com.nti.team.foodies.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 

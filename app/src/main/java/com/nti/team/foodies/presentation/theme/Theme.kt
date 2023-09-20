@@ -1,4 +1,4 @@
-package com.nti.team.foodies.ui.theme
+package com.nti.team.foodies.presentation.theme
 
 import android.app.Activity
 import android.os.Build

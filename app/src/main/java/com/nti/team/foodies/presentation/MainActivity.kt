@@ -1,4 +1,4 @@
-package com.nti.team.foodies
+package com.nti.team.foodies.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.nti.team.foodies.ui.theme.FoodiesTheme
+import com.nti.team.foodies.presentation.theme.FoodiesTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
