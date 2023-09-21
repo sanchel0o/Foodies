@@ -102,13 +102,13 @@ fun PriceCard(
         ) {
             Text(
                 style = MaterialTheme.typography.titleLarge,
-                text = "480" + " " + stringResource(id = R.string.ruble_symbol)
+                text = "480" + " " + stringResource(id = R.string.currency_symbol)
             )
             Text(
                 style = TextStyle(
                     textDecoration = TextDecoration.LineThrough
                 ),
-                text = "500" + " " + stringResource(id = R.string.ruble_symbol)
+                text = "500" + " " + stringResource(id = R.string.currency_symbol)
             )
         }
     }

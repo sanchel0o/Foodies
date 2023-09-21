@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Foodies</string>
-    <string name="ruble_symbol">₽</string>
-    <string name="gramm_symbol"> г</string>
+    <string name="currency_symbol">₽</string>
+    <string name="weight_symbol">г</string>
+    <string name="calories_symbol">ккал</string>
     <string name="add_to_cart_for">В корзину за</string>
 </resources>
